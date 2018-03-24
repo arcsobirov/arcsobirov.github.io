@@ -9,4 +9,4 @@
 [Сайт для системы оплаты PayBank.](https://arcsobirov.github.io/PayBank/interface1.html/ "Необязательная подсказка")
 
 
-#[Сайт для Physics by Sobirov J.](https://arcsobirov.github.io/fizika/index.html/ "Необязательная подсказка")#
+[Сайт для Physics by Sobirov J.](https://arcsobirov.github.io/fizika/ "Необязательная подсказка")
