@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SMU Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/datetimepicker.css">
+	<link rel="stylesheet" href="css/fa-svg-with-js.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.mcscroll.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img class="brand" src="img/logowh.png" alt=""></h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        СОТРУТДНИКИ
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <i class="fa fa-users"></i>
+                        АКТИВИСТЫ
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///D:/WEBX/Oqil%20aka/YoshlarIttifoqi/events.html#">
+                        <i class="fa fa-calendar-alt"></i>
+                        МЕРОПРИЯТИЕ
+                    </a>
+                </li>
+				<li>
+                    <a href="#">
+                        <i class="fa fa-sign-out-alt"></i>
+                        ПОСЕЩЕНИЕ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-cog"></i>
+                        НАСТРОЙКИ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-info-circle"></i>
+                        РУКОВОДСТВО
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-file"></i>
+                        ОТЧЕТ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+        	<nav class="navbar navbar-expand-lg mainbgnav justify-content-between">
+			  	<button type="button" id="sidebarCollapse" class="btn btn-primary navbar-btn">
+                    <i class="fa fa-align-left"></i>
+                </button>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav ml-auto rightnav">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#"><img class="navavatar" src="img/avatar_default.png" alt="">Ильхом Джураев Пулатович <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <div class="dropdown">
+					  <i class="fa fa-globe globelang" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Русский</a>
+					    <a class="dropdown-item" href="#">O'zbek</a>
+					    <a class="dropdown-item" href="#">English</a>
+					  </div>
+					</div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Выход</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+
+            <div class="add_activistswrap">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <p class="login-title">ДОБАВИТЬ АКТИВИСТА</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <button type="button" class="btn btn-primary nextbtn">Добавить</button>
+                        <button type="button" class="btn btn-secondary nextbtn">Отменить</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="personal" aria-selected="true">Личные данные</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Образование</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Трудовая деятельность</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="sertification-tab" data-toggle="tab" href="#sertification" role="tab" aria-controls="sertification" aria-selected="false">Поощрения, награды и льготы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="document-tab" data-toggle="tab" href="#document" role="tab" aria-controls="document" aria-selected="false">Документы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="maincontent">
+            	<div class="container-fluid">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>Personal Data</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Фамилия:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Имя:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Отечество:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Фотография:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="file" class="form-control" id="login" required="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Дата рождения:</label>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <div class='input-group'>
+                                                            <input type='text'  class="form-control date"  id="datebirth" placeholder="Дата рождения" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label for="login" class="col-sm-1 col-form-label align-right">Пол:</label>
+                                                <div class="col-sm-5">
+                                                    <select class="custom-select">
+                                                        <option selected>Мужской</option>
+                                                        <option value="1">Женский</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Место рождения:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Номер телефона:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Домашний номер телефона:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Серия паспорта:</label>
+                                                <div class="col-sm-4">
+                                                    <div class="input-group mb-2">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">AA</div>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="inlineFormInputGroup">
+                                                    </div>
+                                                </div>
+                                                <label for="login" class="col-sm-2 col-form-label align-right">Дата выдачи:</label>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <div class='input-group'>
+                                                            <input type='text'  class="form-control date"  id="datebirth" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Кем выдан:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Уровень знания компьютера:</label>
+                                                <div class="col-sm-9">
+                                                    <select class="custom-select">
+                                                        <option selected>Продвинутый</option>
+                                                        <option value="1">Новичок</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Компьютерные навыки:</label>
+                                                <div class="col-sm-9">
+                                                    <textarea class="form-control" name="text"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>                           
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Гражданство:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Национальность:</label>
+                                                <div class="col-sm-9">
+                                                    <select class="custom-select">
+                                                        <option selected>Узбек</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Состояние в браке:</label>
+                                                <div class="col-sm-9">
+                                                    <select class="custom-select">
+                                                        <option selected>Холост</option>
+                                                        <option value="1">Женат</option>
+                                                        <option value="2">Замужем</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Адрес место жительство:</label>
+                                                <div class="col-sm-9">
+                                                    <textarea class="form-control" name="text"></textarea>
+                                                    <small class="text-muted" style="color: #00acf7 !important;">*По паспорту</small>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">ИНН:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Адрес эл. почты:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Информация о выезде за границу:</label>
+                                                <div class="col-sm-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <select class="custom-select">
+                                                                <option selected>Россия</option>
+                                                                <option value="1">Германия</option>
+                                                                <option value="2">Америка</option>
+                                                            </select>
+                                                        </div>
+                                                        <label for="login" class="col-sm-2 col-form-label align-right">Год:</label>
+                                                        <div class="col-sm-5">
+                                                            <div class="form-group">
+                                                                <div class='input-group'>
+                                                                    <input type='text'  class="form-control date"  id="datebirth" required="">
+                                                                    <span class="input-group-addon facalendar">
+                                                                        <span class="fa fa-calendar-alt"></span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row" id="country_fields">
+                                                        
+                                                    </div>
+                                                    <button type="button" id="addcountry_field" class="btn addbtn">Добавить</button>  
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Судимость:</label>
+                                                <div class="col-sm-4">
+                                                    <select class="custom-select">
+                                                        <option selected>Нет</option>
+                                                        <option value="1">Да</option>
+                                                    </select>
+                                                </div>
+                                                <label for="login" class="col-sm-2 col-form-label align-right">Партийность:</label>
+                                                <div class="col-sm-3">
+                                                    <select class="custom-select">
+                                                        <option selected>Нет</option>
+                                                        <option value="1">Да</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Знания языков:</label>
+                                                <div class="col-sm-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <select class="custom-select">
+                                                                <option selected>Русский</option>
+                                                                <option value="1">Английский</option>
+                                                            </select>
+                                                        </div>
+                                                        <label for="login" class="col-sm-3 col-form-label align-right">Уровень:</label>
+                                                        <div class="col-sm-5">
+                                                            <select class="custom-select">
+                                                                <option selected>Начинающий</option>
+                                                                <option value="1">Да</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" id="lang_fields">
+                                                        
+                                                    </div>
+                                                    <button type="button" id="addlang_field" class="btn addbtn">Добавить</button>  
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Водительское удостоверение:</label>
+                                                <div class="col-sm-9">
+                                                    <div class="form-check drive_doc">
+                                                        <label>
+                                                            <input type="checkbox" name="check"> <span class="label-text">A</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" name="check"> <span class="label-text">B</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" name="check"> <span class="label-text">C</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" name="check"> <span class="label-text">D</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" name="check"> <span class="label-text">E</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /personal data -->
+                                    <p>Army Reg</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Категория запаса:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Воинское звание:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Состав(профиль):</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Полное кодовое обозначение ВУС:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Наименование военного коммиссиарата по м/ж:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                        </div>                           
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Категория годности к военной службе:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <p class="text-center">Состоит на воинском учете:</p>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">а) общем:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">б) специальном:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Отметка о снятии с воинского учета:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /army reg -->
+                                    <p>information about relatives</p>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Степень родства</th>
+                                                        <th scope="col">ФИО</th>
+                                                        <th scope="col">Дата рожд.</th>
+                                                        <th scope="col">Учебное заведение или рабочее место/должность</th>
+                                                        <th scope="col">Место Жительство</th>
+                                                        <th scope="col"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="relative_field">
+                                                    <tr class="relativesrow">
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <select class="custom-select">
+                                                                    <option selected>Отец</option>
+                                                                    <option value="1">Мать</option>
+                                                                    <option value="1">Сестра</option>
+                                                                    <option value="1">Брат</option>
+                                                                </select>   
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="email" class="form-control" id="login">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <div class='input-group'>
+                                                                    <input type='text'  class="form-control date"  id="datebirth" placeholder="Дата рождения" required="">
+                                                                    <span class="input-group-addon facalendar">
+                                                                        <span class="fa fa-calendar-alt"></span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="email" class="form-control" id="login">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="email" class="form-control" id="login">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>
+                                                            <button type="button" id="addrelative_field" class="btn addbtn">Добавить</button> 
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div><!--  /info relative form -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>Education</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Степень</th>
+                                                <th scope="col">Период обучение</th>
+                                                <th scope="col">Учебное Заведение</th>
+                                                <th scope="col">Серия и номер</th>
+                                                <th scope="col">Специальность</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="education_field">
+                                            <tr class="educationrow">
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select class="custom-select">
+                                                            <option selected>Средный</option>
+                                                            <option value="1">Средный-спецаильный</option>
+                                                            <option value="1">Высший</option>
+                                                            <option value="1">Брат</option>
+                                                        </select>   
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="input-group education-cal">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Начало" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="input-group education-cal">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Окончание" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <div class="form-group row">
+                                                        <label for="login" class="col-sm-1 col-form-label">Страна:</label>
+                                                        <div class="col-sm-2">
+                                                            <select class="custom-select">
+                                                                <option selected>Германия</option>
+                                                                <option value="1">Женский</option>
+                                                            </select>
+                                                        </div>
+                                                        <label for="login" class="col-sm-1 col-form-label">Факультет:</label>
+                                                        <div class="col-sm-2">
+                                                            <input type="email" class="form-control" id="login">
+                                                        </div>
+                                                        <label for="login" class="col-sm-1 col-form-label">Направление:</label>
+                                                        <div class="col-sm-2">
+                                                            <input type="email" class="form-control" id="login">
+                                                        </div>
+                                                        <label for="login" class="col-sm-1 col-form-label">Диплом №:</label>
+                                                        <div class="col-sm-2">
+                                                            <input type="email" class="form-control" id="login">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mr-auto p-2">Прикреплено: <span id="counter_edufile"></span> файла</div>
+                                                        <div class="ml-auto p-2">
+                                                            <input type="file" class="btn addbtn" id='edufile' onchange="list_file(this.id)" multiple/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-sm-12" id="list_edufile">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>
+                                                    <button type="button" id="education_field" class="btn addbtn">Добавить</button> 
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <p>attestation</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Период обучение</th>
+                                                <th scope="col">Решение коммиссии</th>
+                                                <th scope="col">№ документа</th>
+                                                <th scope="col">Дата документа</th>
+                                                <th scope="col">Основание</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="attestation_field">
+                                            <tr class="attestationrow">
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Начало" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Начало" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mr-auto p-2">Прикреплено: <span id="counter_attestationfile"></span> файла</div>
+                                                        <div class="ml-auto p-2">
+                                                            <input type="file" class="btn addbtn" id='attestationfile' onchange="list_file(this.id)" multiple/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-sm-12" id="list_attestationfile">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>
+                                                    <button type="button" id="education_field" class="btn addbtn">Добавить</button> 
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <p>training</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Период обучение</th>
+                                                <th scope="col">Вид квалификации</th>
+                                                <th scope="col">Учебное заведение</th>
+                                                <th scope="col">Наименование документа</th>
+                                                <th scope="col">Серия и дата</th>
+                                                <th scope="col">Специальность</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="training_field">
+                                            <tr class="trainingrow">
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="input-group education-cal">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Начало" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="input-group education-cal">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Окончание" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select class="custom-select">
+                                                            <option selected>Краткосрочное</option>
+                                                            <option value="1">Средный-спецаильный</option>
+                                                            <option value="1">Высший</option>
+                                                            <option value="1">Брат</option>
+                                                        </select>   
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select class="custom-select">
+                                                            <option selected>Удостворение</option>
+                                                            <option value="1">Средный-спецаильный</option>
+                                                            <option value="1">Высший</option>
+                                                            <option value="1">Брат</option>
+                                                        </select>   
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6">
+                                                    <div class="form-group row">
+                                                        <label for="login" class="col-sm-3 col-form-label">Место нахождение образовательного учреждение:</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="email" class="form-control" id="login">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mr-auto p-2">Прикреплено: <span id="counter_trainingfile"></span> файла</div>
+                                                        <div class="ml-auto p-2">
+                                                            <input type="file" class="btn addbtn" id='trainingfile' onchange="list_file(this.id)" multiple/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-sm-12" id="list_trainingfile">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>
+                                                    <button type="button" id="education_field" class="btn addbtn">Добавить</button> 
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <p>retraining</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Период обучение</th>
+                                                <th scope="col">Специальность</th>
+                                                <th scope="col">Наименование документа</th>
+                                                <th scope="col">Серия</th>
+                                                <th scope="col">Дата</th>
+                                                <th scope="col">Основание</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="training_field">
+                                            <tr class="trainingrow">
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="input-group education-cal">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Начало" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="input-group education-cal">
+                                                            <input type="text"  class="form-control date"  id="datebirth" placeholder="Окончание" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <select class="custom-select">
+                                                            <option selected>Краткосрочное</option>
+                                                            <option value="1">Средный-спецаильный</option>
+                                                            <option value="1">Высший</option>
+                                                            <option value="1">Брат</option>
+                                                        </select>   
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control date"  id="datebirth" placeholder="Начало" required="">
+                                                            <span class="input-group-addon facalendar">
+                                                                <span class="fa fa-calendar-alt"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="login">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6">
+                                                    <div class="form-group row">
+                                                        <label for="login" class="col-sm-3 col-form-label">Место нахождение образовательного учреждение:</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="email" class="form-control" id="login">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mr-auto p-2">Прикреплено: <span id="counter_retrainingfile"></span> файла</div>
+                                                        <div class="ml-auto p-2">
+                                                            <input type="file" class="btn addbtn" id='retrainingfile' onchange="list_file(this.id)" multiple/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" >
+                                                        <div class="col-sm-12" id="list_retrainingfile">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>
+                                                    <button type="button" id="education_field" class="btn addbtn">Добавить</button> 
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+                            <p>Work</p>
+                        </div>
+                        <div class="tab-pane fade" id="sertification" role="tabpanel" aria-labelledby="sertification-tab">
+                            <p>sertification</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Наименование награды</th>
+                                        <th scope="col">Наименование документа</th>
+                                        <th scope="col">Нормер документа</th>
+                                        <th scope="col">Дата документа</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="email" class="form-control" id="login">
+                                        </td>
+                                        <td>
+                                            <input type="email" class="form-control" id="login">
+                                        </td>
+                                        <td>
+                                            <input type="email" class="form-control" id="login">
+                                        </td>
+                                        <td>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control date"  id="datebirth" placeholder="Начало" required="">
+                                                    <span class="input-group-addon facalendar">
+                                                        <span class="fa fa-calendar-alt"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <div class="form-group row">
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Мотив награждение:</label>
+                                                <div class="col-sm-3">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                                <label for="login" class="col-sm-3 col-form-label align-right">В сумме:</label>
+                                                <div class="col-sm-3">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Вид поощерения:</label>
+                                                <div class="col-sm-3">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                                <label for="login" class="col-sm-3 col-form-label align-right">Основание представление:</label>
+                                                <div class="col-sm-3">
+                                                    <input type="email" class="form-control" id="login">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="mr-auto p-2">Прикреплено: <span id="counter_edufile"></span> файла</div>
+                                                <div class="ml-auto p-2">
+                                                    <input type="file" class="btn addbtn" id='edufile' onchange="list_file(this.id)" multiple/>
+                                                </div>
+                                            </div>
+                                            <div class="row" >
+                                                <div class="col-sm-12" id="list_edufile">
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="document" role="tabpanel" aria-labelledby="document-tab">
+                            <p>retraining</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Название документа</th>
+                                        <th scope="col">Раздел</th>
+                                        <th scope="col">Приклепленный файл</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>Диплом университета</p>
+                                        </td>
+                                        <td>
+                                            <p>Образование / Повышение квалификации</p>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group listbtn">
+                                                <button type="button" class="btn addbtn">Title</button>
+                                                <button type="button" class="btn addbtn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true">
+                                                    <span class="sr-only"></span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Удалить</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger">
+                                                <span class="fa fa-trash-alt" aria-hidden="true"></span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+	            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/datetimepicker.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+<script src="js/jquery.mcscroll.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+        var datePickerOptions = {
+            locale: 'ru',
+            viewMode: 'years',
+            format: 'DD-MM-YYYY',
+            icons: {
+                    time: "fa fa-clock-o",
+                    date: "fa fa-calendar-alt",
+                    up: "fa fa-arrow-up",
+                    down: "fa fa-arrow-down",
+                    left: "fa fa-chevron-left",
+                    right: "fa fa-chevron-right"
+                }
+        }
+        $('.date').datetimepicker(datePickerOptions);
+
+        var countryfield = 1;
+        var langfield = 1;
+        var relativefield = 1;
+
+        $("#addcountry_field").click(function(){
+            $("#country_fields").append('<div class="fieldrow countryrow'+countryfield+'"><div class="col-sm-5" ><select class="custom-select" name="country'+countryfield+'"><option selected>Россия</option><option value="1">Германия</option><option value="2">Америка</option></select></div><label for="login" class="col-sm-1 col-form-label align-right">Год:</label><div class="col-sm-4"><div class="form-group"><div class="input-group"><input type="text" name="countrydate'+countryfield+'" class="form-control date" required=""><span class="input-group-addon facalendar"><span class="fa fa-calendar-alt"></span></span></div></div></div><div class="col-sm-2"><button class="btn btn-danger" onclick="remove_country_fields('+ countryfield +')";><span class="fa fa-trash-alt" aria-hidden="true"></span></button></div><div class="clearfix"></div>');
+            countryfield++;
+            $('.date').datetimepicker(datePickerOptions);
+        });
+        $("#addlang_field").click(function(){
+            $("#lang_fields").append('<div class="fieldrow langrow'+langfield+'"><div class="col-sm-4"><select class="custom-select" name="lang'+langfield+'"><option selected>Русский</option><option value="1"></option></select></div><label for="login" class="col-sm-2 col-form-label align-right">Уровень:</label><div class="col-sm-4"><select class="custom-select" name="langlevel'+langfield+'"><option selected>Начинающий</option><option value="1">Да</option></select></div><div class="col-sm-2"><button class="btn btn-danger" onclick="remove_lang_fields('+ langfield +')";><span class="fa fa-trash-alt" aria-hidden="true"></span></button></div></div><div class="clearfix"></div>');
+            langfield++;
+        });
+        $("#addrelative_field").click(function(){
+            $("#relative_field").append('<tr class="relativesrow'+relativefield+'"><td><div class="form-group"><select class="custom-select"><option selected>Отец</option><option value="1">Мать</option><option value="1">Сестра</option><option value="1">Брат</option></select></div></td><td><div class="form-group"><input type="email" class="form-control" id="login"></div></td><td><div class="form-group"><div class="input-group"><input type="text" class="form-control date" id="datebirth" placeholder="Дата рождения" required=""><span class="input-group-addon facalendar"><span class="fa fa-calendar-alt"></span></span></div></div></td><td><div class="form-group"><input type="email" class="form-control" id="login"></div></td><td><div class="form-group"><input type="email" class="form-control" id="login"></div></td><td><button class="btn btn-danger" onclick="remove_relative_field('+ relativefield +')";><span class="fa fa-trash-alt" aria-hidden="true"></span></button></td></tr>');
+            relativefield++;
+            $('.date').datetimepicker(datePickerOptions);
+        });
+
+    });
+    
+    function remove_country_fields(rid) {
+       $('.countryrow'+rid).remove();
+    }
+    function remove_lang_fields(rid) {
+       $('.langrow'+rid).remove();
+    }
+    function remove_relative_field(rid) {
+       $('.relativesrow'+rid).remove();
+    }
+    function list_file(id){
+        var files = $('#'+id)[0].files;
+        var list = $('#list_'+id);
+        var counter = files.length;
+        $("#counter_"+id).html(counter);
+
+        list.empty();
+        for(var i =0;i<counter; i++)
+        {
+            var el = '<div class="btn-group listbtn"><button type="button" class="btn addbtn">'+ files[i].name +'</button><button type="button" class="btn addbtn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"><span class="sr-only"></span></button><div class="dropdown-menu"><a class="dropdown-item" href="#">Удалить</a></div></div>'
+            list.append(el);
+        }
+    }
+
+</script>
+
+</html>

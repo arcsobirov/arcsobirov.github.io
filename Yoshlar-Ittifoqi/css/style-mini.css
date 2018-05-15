@@ -1,0 +1,38 @@
+@media (max-width:765px) {
+  
+    .add_activistswrap {
+        padding-bottom: 10px;
+    }
+    .my-btn-blue {
+        float: left;
+        width: 30%;
+    }
+    .nav-input-up {
+width: 65%;
+        float: right;
+    }
+}
+
+
+
+
+
+@media (max-width:976px) {
+    
+     .my-btn-blue {
+         display: block;
+        float: right;
+        width: 30%;
+    }
+    .nav-input-up {
+        
+        display: block;
+        width: 90%;
+        float: right;
+    }
+
+    
+
+    
+}
+

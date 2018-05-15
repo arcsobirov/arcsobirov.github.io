@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SMU Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/datetimepicker.css">
+	<link rel="stylesheet" href="css/fa-svg-with-js.css">
+	<link rel="stylesheet" href="css/jquery.mcscroll.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    
+    <link rel="stylesheet" href="css/bootstrap-year-calendar.css"><!--Calendar style css-->
+    <link rel="stylesheet" href="css/style.css"><!--My style css-->
+    <link rel="stylesheet" href="css/style-mini.css"> <!--CSS for Adaptive--> 
+    
+
+    
+    
+</head>
+
+<body>
+	<div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img class="brand" src="img/logowh.png" alt=""></h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        СОТРУТДНИКИ
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <i class="fa fa-users"></i>
+                        АКТИВИСТЫ
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///D:/WEBX/Oqil%20aka/YoshlarIttifoqi/events.html#">
+                        <i class="fa fa-calendar-alt"></i>
+                        МЕРОПРИЯТИЕ
+                    </a>
+                </li>
+				<li>
+                    <a href="YoshlarIttifoqi/add-event.html">
+                        <i class="fa fa-sign-out-alt"></i>
+                        ДОБАВИТЬ МЕР.
+                    </a>
+                </li>
+                <li>
+                    <a href="YoshlarIttifoqi/add-event.html">
+                        <i class="fa fa-cog"></i>
+                        НАСТРОЙКИ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-info-circle"></i>
+                        РУКОВОДСТВО
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-file"></i>
+                        ОТЧЕТ
+                    </a>
+                </li>+
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+        	<nav class="navbar navbar-expand-lg mainbgnav justify-content-between">
+			  	<button type="button" id="sidebarCollapse" class="btn btn-primary navbar-btn">
+                    <i class="fa fa-align-left"></i>
+                </button>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav ml-auto rightnav">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#"><img class="navavatar" src="img/avatar_default.png" alt="">Ильхом Джураев Пулатович <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <div class="dropdown">
+					  <i class="fa fa-globe globelang" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Русский</a>
+					    <a class="dropdown-item" href="#">O'zbek</a>
+					    <a class="dropdown-item" href="#">English</a>
+					  </div>
+					</div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Выход</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+
+            <div class="add_activistswrap">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <p class="login-title nav-titleUp" id="date-name-me-0">КАЛЕНДАРЬ МЕРОПРИЯТИЙ</p>
+                        <p class="login-title nav-titleUp" id="date-name-me-1" style="display: none;">МЕРОПРИЯТИЯ</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 my-check">
+                         <input type="text" class="nav-input-up form-control" placeholder="Поиск мероприятий" id="date-name-me-2">
+                        <button type="button" class="btn btn-secondary nextbtn event-list showCalendar" id="date-name-me-3" style="display: none;">Назад</button>
+                        <button type="button" class="btn btn-secondary nextbtn event-list showCalendar" id="date-name-me-3" style="display: none;">Назад</button>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+<!--      <button class="qwerty" id="qwerty" onclick="alert('Hello')">Click me</button>-->
+            
+                  
+
+
+<div class="maincontent" >
+    <div class="container-fluid">
+    
+        <div data-provide="calendar" id="calendar">Загрузка календаря событий...</div>
+        
+    
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/datetimepicker.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+<script src="js/jquery.mcscroll.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/bootstrap-year-calendar.js"></script>
+
+<script src="js/my-scripts.js"></script>
+<script src="js/calendar-my.js"></script>
+
+
+<script>
+    
+    
+    $(document).ready(function(){
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+        var datePickerOptions = {
+            locale: 'ru',
+            viewMode: 'years',
+            format: 'DD-MM-YYYY',
+            icons: {
+                    time: "fa fa-clock-o",
+                    date: "fa fa-calendar-alt",
+                    up: "fa fa-arrow-up",
+                    down: "fa fa-arrow-down",
+                    left: "fa fa-chevron-left",
+                    right: "fa fa-chevron-right"
+                }
+        }
+        $('.date').datetimepicker(datePickerOptions);
+
+        var countryfield = 1;
+        var langfield = 1;
+        var relativefield = 1;
+
+
+    });
+    
+    function remove_country_fields(rid) {
+       $('.countryrow'+rid).remove();
+    }
+    function remove_lang_fields(rid) {
+       $('.langrow'+rid).remove();
+    }
+    function remove_relative_field(rid) {
+       $('.relativesrow'+rid).remove();
+    }
+    function list_file(id){
+        var files = $('#'+id)[0].files;
+        var list = $('#list_'+id);
+        var counter = files.length;
+        $("#counter_"+id).html(counter);
+
+        list.empty();
+        for(var i =0;i<counter; i++)
+        {
+            var el = '<div class="btn-group listbtn"><button type="button" class="btn addbtn">'+ files[i].name +'</button><button type="button" class="btn addbtn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"><span class="sr-only"></span></button><div class="dropdown-menu"><a class="dropdown-item" href="#">Удалить</a></div></div>'
+            list.append(el);
+        }
+    }
+
+</script>
+    
+<script type="text/javascript">
+
+            function openlist(id){
+                innerHeight = document.getElementById(id).style.height;
+
+                if(innerHeight=='30px'){
+                    document.getElementById(id).style.height='auto';
+                    var elem = document.getElementById('btnDrop');
+                    elem.style.transform = "rotate(180deg)";
+
+                }
+                else{
+                   document.getElementById(id).style.height='30px';
+                    var elem = document.getElementById('btnDrop');
+                    elem.style.transform = "rotate(0deg)";
+                    elem.style.p = "rotate(0deg)";
+                }
+            }
+</script>
+
+</html>
