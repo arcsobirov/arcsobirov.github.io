@@ -10,3 +10,7 @@
 
 
 [Сайт для Physics by Sobirov J.](https://arcsobirov.github.io/fizika/ "Необязательная подсказка")
+
+
+[Сайт для Сояза маладёжи](https://arcsobirov.github.io/Yoshlar-Ittifoqi/calendar.html")
+
