@@ -1,0 +1,345 @@
+@media (max-width: 1200px) {
+	header .slide-content {
+		
+	}
+	header  h1 {
+		font-size: 3rem !important;
+	}
+	.video-list {
+		justify-content: space-around;
+	}
+	.video-list__item {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.video .wrapper h2 {
+		text-align: center
+	}
+	.live .heading {
+		display: flex;
+		justify-content: center
+	}
+
+}
+
+@media (max-width: 1110px) {
+	.header-slider {
+	    min-height: 500px;
+        clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 87%);
+	}
+	.header-slider .slide{
+		padding-top: 100px;
+	}
+	.header-slider .slide h1{
+		line-height: 50px;
+	}
+	.person-contact {
+		margin-top: -20px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.person-contact__online {
+		margin: auto;
+	}
+	.person-contact__online .chanel {
+		float: left;
+		margin: 0 3rem;
+	}
+	.l-live .live-info h2{
+		font-size: 20px;
+	}
+	.r-live{
+		width: 50%;
+	}
+	.seminar .training {
+		padding-left: 30px;
+	}
+	.seminar .seminar_list_item{
+		min-height: 200px;
+	}
+
+	.r-prak{
+		width: 44%;
+		align-content: flex-start;
+	}
+	.guest h2{
+		text-align: center;
+	}
+	.context {
+		margin-left: 30px;
+	}
+	.footer {
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
+	}
+}
+
+@media (max-width: 991px) {
+	nav {
+		padding: 0 25px 0 30px;
+	}
+	.header-slider .slide-content {
+		max-width: 100% !important;
+	}
+	header h1 {
+		border-bottom: 0 !important;
+	}
+	.about {
+		display: flex;
+	}
+	.context {
+		text-align: center;
+	}
+	.about .context img {
+		margin-top: 3rem;
+	}
+	.about .wrapper {
+		margin: 0 auto;
+		display: inline-block;
+	}
+	.about-list__item:nth-child(2) {
+		margin-left: 0;
+	}
+	.about-list__item:last-child {
+		margin-left: 0;
+	}
+	.about .about-img span {
+		margin-left: auto;
+	}
+	.lay {
+		display: none;
+	}
+	.video-list__item {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header-slider {
+	    min-height: 770px;
+	    clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 78%);
+	}
+	.header-slider .slide {
+		padding-top: 50px;
+	}
+	.header-slider .slide-content h1 {
+		font-size: 35px;
+		line-height: 45px;
+		padding: 50px 0;
+	}
+	.slider-img img {
+    	width: 449px;
+	}
+	.header-slider .slide h2{
+		font-size: 25px;
+	}
+	.person-contact__online .chanel  {
+		margin: 0 2rem;
+	}	
+	.person-contact__details {
+		text-align: center
+	}
+	.live .l-live{
+		margin-right: 0;
+	}
+	.live .live-in .n-row{
+		flex-flow: wrap;
+	}
+	.r-live{
+		width: 100%;
+	}
+	.seminar{
+		flex-flow: row wrap;
+	}
+	.seminar .training{
+		width: 100%;
+		text-align: center;
+	}
+	.seminar .training p {
+		width: 100%;
+	}
+	.seminar-list{
+		width: 100%;
+		display: block;
+	}
+
+	.count-list {
+		text-align: left;
+	}
+	.seminar .training .count-list {
+		justify-content: center;
+	}
+
+	.in-prak{
+		flex-flow: row wrap;
+		padding: 0;
+	}
+	.l-prak{
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.r-prak{
+		padding: 0;
+		width: 100%;
+	}
+	.r-prak button{
+		width: 50%;
+	}
+	.r-prak>div:first-child{
+		display: none;
+	}
+	.r-prak>div{
+		width: 100%;
+	}
+	.btn-row{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.btn-row button{
+		padding: 0;
+		height: 45px;
+		min-width: 100px;
+		border-radius: 0;	
+	}
+}
+
+@media (max-width: 596px) {
+	.nav-list {
+		display: none
+	}
+	.header-slider .slide-content {
+		text-align: center;
+	}
+	.about-list {
+		text-align: center;
+	}
+	.about-list__item {
+		display: block;
+		width: 100%;
+	}
+	.about-list .about-img {
+		display: block;
+		width: 40px;
+		margin: 0  auto 10px; 
+	}
+	.person-contact__online .chanel {
+		margin-bottom: 1.6rem;
+	}
+	.live .l-live{
+		flex-flow: wrap;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.l-live .live-info h2{
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.live .img-box{
+		margin-bottom: 30px;
+		margin-right: 0;
+	}
+	.r-live {
+	    display: flex;
+	    width: 100%;
+	    flex-flow: wrap;
+	    justify-content: center;
+	}
+	.seminar .training .count-list {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.seminar .training .count-list__item {
+		margin-left: 0;
+		
+	}
+	.seminar .training .count-list__item .count-numb{
+		font-size: 2.4rem;
+	}
+	.seminar .training {
+		padding:2rem;
+	}
+	.p-speaker-box{
+		margin-left: 5px;
+	}
+	.partners h2 {
+		text-align: center;
+	}
+	.sec-contact {
+		text-align: center;
+	}
+	.form-contact {
+		width: 100%;
+	}
+	.white {
+		height: 260px
+	}
+	.footer {
+		padding: 4rem 1rem;
+	}
+	.footer .wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center
+	}
+	.footer .address, .footer .greet {
+		margin-bottom: 3rem;
+	}
+}
+@media (max-width: 425px){
+	.p-row{
+		margin-bottom: 25px;
+	}
+	.l-prak .p-row .logo-box{
+		margin-bottom: 3px;
+	}
+	.l-prak .p-row .logo-box img{
+		width:50px;
+	}
+	.l-prak .p-row .logo-box span{
+		font-size: 14px;
+	}
+	.l-prak .p-row .textp{
+		font-size: 20px;
+	}
+	.l-prak .p-row .ptitle{
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.pbox{
+		font-size: 12px;
+		min-width: 200px;
+	}
+	.pbox img{
+		width: 10px;
+		margin-right: 3px;
+	}
+
+}
+@media (max-width: 320px) {
+	body {
+		overflow-x: hidden;
+	}
+	.header-slider .slide-content h1 {
+		font-size: 1.6rem !important;
+		line-height: 2.6rem;
+	}
+	.live .heading h2 {
+		font-size: 1.6rem;
+	}
+	.form-contact input, .form-contact textarea {
+		width: 200px;
+	}
+	.about .context img{
+		margin-bottom: 3rem;
+	}
+}
