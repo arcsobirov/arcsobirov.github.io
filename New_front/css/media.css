@@ -315,9 +315,12 @@
 		font-size: 18px;
 		line-height: 20px;
 	}
+	.l-prak div.flex{
+	margin-left:-10px;
+	}
 	.pbox{
-		font-size: 12px;
-		min-width: 200px;
+		font-size: 10px;
+		min-width: 180px;
 	}
 	.pbox img{
 		width: 10px;
